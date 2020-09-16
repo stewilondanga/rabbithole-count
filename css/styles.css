@@ -133,11 +133,11 @@ svg {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/*.gopher {
+.gopher {
   visibility: hidden;
 }
 
-.wrong {
+/*.wrong {
   visibility: hidden;
 }
 
