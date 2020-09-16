@@ -100,18 +100,18 @@ table {
   margin: 0 auto;
 }
 
-/*td {
+td {
   -webkit-transform: rotateX(-50deg);
-          transform: rotateX(-50deg);
-                -moz-transform: none;
+  transform: rotateX(-50deg);
+  -moz-transform: none;
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
   width: 120px;
   padding: 0 10px;
   pointer-events: none;
 }
 
-@media screen and (max-width: 550px) {
+/*@media screen and (max-width: 550px) {
   td {
     width: 100px;
   }
