@@ -137,11 +137,11 @@ svg {
   visibility: hidden;
 }
 
-/*.wrong {
+.wrong {
   visibility: hidden;
 }
 
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
