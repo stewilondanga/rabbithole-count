@@ -1,10 +1,10 @@
 var navigate = (function() {
-	$('.dd').toggle();
-	$('.dd_btn').click(function() {
-		var dataName = $(this).attr('data-name');
-		$('.dd').hide();
-		$('.' + dataName).toggle();
-	});
+  $('.dd').toggle();
+  $('.dd_btn').click(function() {
+    var dataName = $(this).attr('data-name');
+    $('.dd').hide();
+    $('.' + dataName).toggle();
+  });
 })();
 
 let holes = Array.from(document.getElementsByClassName("hole"));
@@ -26,7 +26,10 @@ let guess = false;
 let gameover = false;
 let gopherCounter = 0;
 
-TweenMax.set(gophers, { visibility: "visible", y: 110 });
+TweenMax.set(gophers, {
+  visibility: "visible",
+  y: 110
+});
 
 play.addEventListener('click', () => {
   if (!gameover) {
@@ -53,12 +56,39 @@ holes.forEach((hole, i) => {
         gameover = true;
         play.textContent = "Restart";
         play.style.display = "block";
-        TweenMax.from(wrong[i], .5, { autoAlpha: 0, opacity: 0, scale: .8, transformOrigin: "center center", ease: Elastic.easeOut.config(1, 0.3) });
-        TweenMax.to(wrong[i], .3, { opacity: 0, scale: .8, transformOrigin: "center center", delay: 1 });
-        TweenMax.to(wrong[i], .5, { visibility: "hidden", opacity: 1, scale: 1, delay: 1.8 });
-        TweenMax.to(gophers[gopherArray[0]], popupDuration, { y: 0, ease: Circ.easeOut });
-        TweenMax.to(gopherBody, .24, { y: 2, repeat: -1, yoyo: true }, 'chuckle');
-        TweenMax.to(gopherFace, .12, { y: -5, repeat: -1, yoyo: true }, 'chuckle');
+        TweenMax.from(wrong[i], .5, {
+          autoAlpha: 0,
+          opacity: 0,
+          scale: .8,
+          transformOrigin: "center center",
+          ease: Elastic.easeOut.config(1, 0.3)
+        });
+        TweenMax.to(wrong[i], .3, {
+          opacity: 0,
+          scale: .8,
+          transformOrigin: "center center",
+          delay: 1
+        });
+        TweenMax.to(wrong[i], .5, {
+          visibility: "hidden",
+          opacity: 1,
+          scale: 1,
+          delay: 1.8
+        });
+        TweenMax.to(gophers[gopherArray[0]], popupDuration, {
+          y: 0,
+          ease: Circ.easeOut
+        });
+        TweenMax.to(gopherBody, .24, {
+          y: 2,
+          repeat: -1,
+          yoyo: true
+        }, 'chuckle');
+        TweenMax.to(gopherFace, .12, {
+          y: -5,
+          repeat: -1,
+          yoyo: true
+        }, 'chuckle');
       }
     }
   });
@@ -67,14 +97,22 @@ holes.forEach((hole, i) => {
 function foundGopher(i) {
   let gopher = gophers[i];
   let tl = new TimelineMax();
-  tl.add(TweenMax.to(gopher, popupDuration, { y: 0, ease: Circ.easeOut })).
-  add(TweenMax.to(gopher, popupDuration, { y: 110, ease: Circ.easeIn }));
+  tl.add(TweenMax.to(gopher, popupDuration, {
+    y: 0,
+    ease: Circ.easeOut
+  })).
+  add(TweenMax.to(gopher, popupDuration, {
+    y: 110,
+    ease: Circ.easeIn
+  }));
   tl.seek(0);
   tl.play();
 }
 
 function setGopherArray() {
-  gopherArray = Array.from({ length: gopherNumber }, () => Math.floor(Math.random() * 9));
+  gopherArray = Array.from({
+    length: gopherNumber
+  }, () => Math.floor(Math.random() * 9));
   if (round % 3 == 0) {
     gopherNumber++;
   }
@@ -86,8 +124,15 @@ function showGopherOrder() {
     gopherCounter++;
     let gopher = gophers[location];
     let tl = new TimelineMax();
-    tl.add(TweenMax.to(gopher, popupDuration, { y: 0, ease: Circ.easeOut, delay: i * popupDelay })).
-    add(TweenMax.to(gopher, popupDuration, { y: 110, ease: Circ.easeIn }));
+    tl.add(TweenMax.to(gopher, popupDuration, {
+      y: 0,
+      ease: Circ.easeOut,
+      delay: i * popupDelay
+    })).
+    add(TweenMax.to(gopher, popupDuration, {
+      y: 110,
+      ease: Circ.easeIn
+    }));
 
     if (gopherCounter == gopherArray.length) {
       tl.play().
@@ -115,8 +160,15 @@ function restart() {
   gopherArray = [];
   guess = false;
   showScore.textContent = score;
-  TweenMax.to(gophers, popupDuration, { y: 110, ease: Circ.easeOut });
-  TweenMax.to(gopherBody, .28, { y: 0 });
-  TweenMax.to(gopherFace, .12, { y: 0 });
+  TweenMax.to(gophers, popupDuration, {
+    y: 110,
+    ease: Circ.easeOut
+  });
+  TweenMax.to(gopherBody, .28, {
+    y: 0
+  });
+  TweenMax.to(gopherFace, .12, {
+    y: 0
+  });
   start();
 }
