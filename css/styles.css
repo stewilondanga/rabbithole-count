@@ -21,6 +21,133 @@ body {
   height: 1.5em;
 }
 
+html, body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #4F7F38;
+}
+
+.sky {
+  background-color: #91F1FF;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.scoreboard {
+  font-family: 'Caveat', cursive;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-align: center;
+  padding: 10px 50px;
+  color: #432405;
+  background-color: #FFE8C6;
+  border: 3px dotted gold;
+}
+
+.scoreboard:after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 100%;
+  height: 200%;
+  border-left: 10px solid #7F562D;
+  border-right: 10px solid #7F562D;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+.board {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  text-align: center;
+}
+
+#play {
+  display: block;
+  font-family: 'Caveat', cursive;
+  font-size: 1.6em;
+  margin: 0 auto;
+  color: gold;
+  background: none;
+  border: 2px solid gold;
+  border-radius: 3px;
+  padding: 2px 15px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+#play:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+          box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+table {
+  -webkit-transform: rotateX(50deg);
+          transform: rotateX(50deg);
+               -moz-transform: none;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-spacing: 0px;
+  margin: 0 auto;
+}
+
+td {
+  -webkit-transform: rotateX(-50deg);
+          transform: rotateX(-50deg);
+                -moz-transform: none;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  width: 120px;
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 550px) {
+  td {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  td {
+    width: 95px;
+  }
+}
+
+svg {
+  width: 100%;
+}
+
+.hole {
+  pointer-events: auto;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.gopher {
+  visibility: hidden;
+}
+
+.wrong {
+  visibility: hidden;
+}
+
 .containers {
   width: 520px;
   margin: 20px auto;
