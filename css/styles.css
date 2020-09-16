@@ -83,14 +83,14 @@ p {
   cursor: pointer;
 }
 
-/*#play:hover {
+#play:hover {
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-          box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-table {
+/*table {
   -webkit-transform: rotateX(50deg);
           transform: rotateX(50deg);
                -moz-transform: none;
