@@ -90,17 +90,17 @@ p {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-/*table {
+table {
   -webkit-transform: rotateX(50deg);
-          transform: rotateX(50deg);
-               -moz-transform: none;
+  transform: rotateX(50deg);
+  -moz-transform: none;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   border-spacing: 0px;
   margin: 0 auto;
 }
 
-td {
+/*td {
   -webkit-transform: rotateX(-50deg);
           transform: rotateX(-50deg);
                 -moz-transform: none;
