@@ -3,6 +3,10 @@ html, body, h1, p {
   padding: 0;
 }
 
+html, body {
+  background-color: #4F7F38;
+}
+
 /*body {
   text-align: center;
   font-family: courier;
@@ -24,11 +28,6 @@ html, body, h1, p {
 
 .my_social a img {
   height: 1.5em;
-}
-
-
-html, body {
-  background-color: #4F7F38;
 }
 
 .sky {
