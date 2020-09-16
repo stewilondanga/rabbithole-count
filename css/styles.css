@@ -127,13 +127,13 @@ svg {
   width: 100%;
 }
 
-/*.hole {
+.hole {
   pointer-events: auto;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.gopher {
+/*.gopher {
   visibility: hidden;
 }
 
