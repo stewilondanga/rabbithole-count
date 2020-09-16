@@ -7,15 +7,13 @@ html, body {
   background-color: #4F7F38;
 }
 
-/*
-
 .my_social {
   position: absolute;
   top: 25px;
   left: 25px;
 }
 
-.my_social a {
+/*.my_social a {
   display: inline-block;
   height: 2.5em;
 }
