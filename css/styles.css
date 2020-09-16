@@ -43,7 +43,7 @@ html, body {
   border: 3px dotted gold;
 }
 
-/*.scoreboard:after {
+.scoreboard:after {
   content: "";
   position: absolute;
   left: -10px;
@@ -54,7 +54,7 @@ html, body {
   border-right: 10px solid #7F562D;
 }
 
-h1 {
+/*h1 {
   font-size: 2em;
 }
 
