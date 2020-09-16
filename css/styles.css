@@ -111,13 +111,13 @@ td {
   pointer-events: none;
 }
 
-/*@media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
   td {
     width: 100px;
   }
 }
 
-@media screen and (max-width: 420px) {
+/*@media screen and (max-width: 420px) {
   td {
     width: 95px;
   }
