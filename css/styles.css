@@ -58,11 +58,11 @@ h1 {
   font-size: 2em;
 }
 
-/*p {
+p {
   font-size: 1.6em;
 }
 
-.board {
+/*.board {
   -webkit-perspective: 600px;
           perspective: 600px;
   text-align: center;
