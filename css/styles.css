@@ -23,13 +23,13 @@ html, body {
   height: 1.5em;
 }
 
-/*.sky {
+.sky {
   background-color: #91F1FF;
   padding: 30px 10px;
   position: relative;
 }
 
-.scoreboard {
+/*.scoreboard {
   font-family: 'Caveat', cursive;
   display: inline-block;
   position: relative;
