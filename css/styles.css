@@ -117,13 +117,13 @@ td {
   }
 }
 
-/*@media screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
   td {
     width: 95px;
   }
 }
 
-svg {
+/*svg {
   width: 100%;
 }
 
